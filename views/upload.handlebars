@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Bootstrap 3 Template</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+        
+
+        <link href="css/styles.css" rel='stylesheet'>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="dist/bootstrap-clockpicker.min.css">
+        <link rel="stylesheet" type="text/css" href="css/github.min.css">
+        <link rel="stylesheet" type="text/css" href="css/datepicker.css">
+        
+        <!--for glyphicons-->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+      
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+        
+	</head>
+<body>
+	<!--Start of meal thumnail -->
+
+		<div id="smailnail" class="thumbnail">
+      <ul class="pager">
+          <li><a href="/">Previous</a></li>
+          <li><a href="/"> Next </a></li>
+        </ul>
+		<img id ="foodThumnail" src="img/foodThumbail.jpg" alt="foodThumnail">
+		<br></br>
+		<!-- Makes the picture a button
+		<center><a href="#" class="btn" role="button"><img id="foodThumnail" src="img/foodThumbail.jpg"></a></center>
+		-->
+		<!--Upload the file -->
+		<center><input type="file" name="image" accept="image/*" capture></center>
+		
+	<!--END OF: meal thumbnail -->
+
+	<br>
+	<!--Enter caption -->
+      	<div class="caption">
+        	<label class="control-label" for="input01">Description</label><div class="controls"><input type="text" class="form-control input-xlarge" id="input01" placeholder="Write a caption">
+       	</div>
+    <!--END OF: caption-->
+
+	<br> <!-- Spacing between photo and buttons-->
+
+	<!--How are you feeling section?-->
+	<div class="tryingToCenter">
+    	<label class="control-label center-block" for="input01">How are you feeling?</label>
+    	<center><p><a href="#" id ="TR" class="btn btn-danger" role="button"><img id="bad" src="img/sad35.png"></a><a href="#" class="btn btn-success" role="button"><img id="good" src="img/happy6.png"></a></p></center>
+ 	</div>
+
+
+ 	<!--END OF:  how are you feeling section?-->
+
+	<!--Enter Dish name section-->
+	<div class="control-group">
+            <label class="control-label" for="input01">Dish Name</label>
+            <div class="controls "><input type="text" class="form-control input-xlarge" id="input01" placeholder="e.g. burger and fries">
+       		</div>
+   	</div>
+   	<!--END OF: Enter Dish name section-->
+
+            
+	<br> <!-- Spacing between photo and buttons-->
+            
+    <!--Input time-->
+<div class="control-group ">
+            <label class="control-label" for="input01">Time</label>
+</div>
+    <div class="input-group clockpicker" data-placement="bottom" data-align="bottom" data-autoclose="true">
+    <input type="text" class="form-control" value="now">
+    <span class="input-group-addon">
+        <span class="glyphicon glyphicon-time"></span>
+    </span>
+</div>
+    <!--END OF TIME1-->
+
+            
+	<br> <!-- Spacing between photo and buttons-->
+            
+            
+   	<!--Input date -->
+<div class="control-group ">
+    <label class="control-label" for="input01">Date</label>
+</div>
+<div class="input-append date" id="dp3" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+    <input class="form-control" size="16" type="text" value="12-02-2012">
+    <span class="add-on"><i class="icon-th"></i></span>
+</div><br>
+
+   	<!-- END OF date -->
+
+   	<!--Input location-->
+   	<div class="control-group">
+            <label class="control-label" for="input01">Location</label>
+       <div class="controls"><input type="text" class="form-control input-xlarge" id="input01" placeholder="Find">
+       	
+       		</div>
+   	</div>
+   	<!--END OF location-->
+
+    <!--SUBMIT BUTTON-->
+    <br>
+    <center><button class="btn" data-dismiss="modal" aria-hidden="true"onclick="javascript:window.location.href='/'">Cancel</button>
+    <button class="btn btn-primary " >Save changes</button></center>
+
+    
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="dist/bootstrap-clockpicker.min.js"></script>
+
+
+<!--script for clockpicker-->
+<script type="text/javascript">
+    $('.clockpicker').clockpicker();
+</script>
+
+
+<!--script for date picker-->
+<script type="text/javascript">
+    $('.datepicker').datepicker();
+</script>
+
+</body>
+</html>
